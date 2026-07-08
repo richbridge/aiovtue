@@ -29,10 +29,10 @@
 # =============================================================================
 
 # 站点正式访问地址（影响 sitemap、RSS、分享链接等绝对 URL，部署前务必与真实域名一致）
-baseURL = 'https://daily.yybb.us/'
+baseURL = 'https://richfan.eu.org/'
 locale = 'zh-cn'
 defaultContentLanguage = 'zh'
-title = 'AIOVTUE-雪'          # 站点名称（浏览器标题、页脚版权等）
+title = 'RichFan-笼'          # 站点名称（浏览器标题、页脚版权等）
 theme = 'aiovtue'           # 主题目录：themes/aiovtue/
 hasCJKLanguage = true      # 启用中文分词（搜索、摘要等）
 enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layouts/robots.txt）
@@ -88,10 +88,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 # 站点参数（主题通过 .Site.Params 读取）
 # =============================================================================
 [params]
-  subtitle = '雪'                              # 副标题（首页标题后缀）
+  subtitle = '笼'                              # 副标题（首页标题后缀）
   description = '雨是神的烟花'                  # 站点默认描述（SEO、分享卡片）
   primaryColor = '#DF9193'                     # 主题主色
-  favicon = '/hero/avatar.png'
+  favicon = 'https://img.252262.xyz/file/1782984137214_favicon.ico'
   defaultCover = '/hero/tt3.png'               # 文章默认头图（无 cover 时使用）
   math = false                                 # 默认关闭；单篇 front matter 写 math: true 启用构建时 KaTeX 渲染
   postIndent = true                            # 文章/关于页正文首行缩进 2em（单篇可写 indent: false 关闭）
@@ -114,7 +114,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- 追番页（Bilibili 追番列表，构建时拉取 data/bangumi.json）---
   [params.bangumi]
     enable = true                             # 是否启用追番页与构建时数据拉取
-    vmid = '334423445'                        # Bilibili 用户 UID（追番列表需空间公开）
+    vmid = '357338380'                        # Bilibili 用户 UID（追番列表需空间公开）
     quote = '生命不息，追番不止！'              # 页面引言
 
   # --- Excalidraw 画板文章（content/excalidraw/<slug>/index.md + *.excalidraw）---
@@ -128,15 +128,15 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 侧栏 / 关于页作者信息 ---
   [params.author]
-    name = 'AIOVTUE'
-    avatar = '/hero/avatar.png'
+    name = 'RichFan'
+    avatar = 'https://img.252262.xyz/file/1782983588519_avatar.jpg'
     statusEmoji = '🌸'     # 头像角标
     statusMessage = '发呆ing...'
 
   # --- 首页 Hero 大图 / 视频轮播 ---
   # 媒体文件放在 static/hero/，此处写 URL 路径（以 / 开头）
   [params.hero]
-    title = 'AIOVTUE'
+    title = 'RichFan'
     motto = '雨是神的烟花'
     randomUrls = true      # 随机切换背景
     enableHitokoto = true  # 一言 API 随机格言
@@ -159,9 +159,9 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 页脚 ---
   [params.footer]
-    since = 2024           # 版权起始年
-    runtimeSince = '2024-01-01'   # 站点运行倒计时起点（YYYY-MM-DD）
-    icp = '<a href="https://icp.gov.moe/?keyword=20260258" target="_blank" rel="noopener">萌ICP备20260258号</a>'
+    since = 2020           # 版权起始年
+    runtimeSince = '2020-01-01'   # 站点运行倒计时起点（YYYY-MM-DD）
+    icp = '<a href="https://icp.gov.moe/?keyword=262252.xyz" target="_blank" rel="noopener">萌ICP备20250629号</a>'
 
   # --- 首页公告栏（右侧域名列表）---
   # --- 首页文章列表布局 ---
@@ -176,10 +176,10 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     rotateInterval = 5000  # 左侧随机文章轮播间隔（毫秒）
     [[params.notice.sections]]
       label = '--- 主域名 ---'
-      lines = ['daily.yybb.us', 'day.yybb.us']
+      lines = ['252262.xyz', '262252.xyz']
     [[params.notice.sections]]
       label = '--- 备用域名 ---'
-      lines = ['daily.20030327.xyz', 'daily.yybb.dpdns.org', 'daily.aiovtue.dpdns.org']
+      lines = ['richfan.eu.org', 'fanrich.eu.org']
 
   # --- 侧栏 / Hero 社交图标（icon 为 Iconify 图标名）---
   [[params.social]]
@@ -189,17 +189,17 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     color = 'orange'
   [[params.social]]
     name = 'GitHub'
-    link = 'https://github.com/AIOVTUE'
+    link = 'https://github.com/richbridge'
     icon = 'ri:github-line'
     color = '#6e5494'
   [[params.social]]
     name = '微信公众号'
-    link = '/hero/wxgzh.png'
+    link = 'https://img.252262.xyz/file/1783481701602_qrcode_for_gh.jpg'
     icon = 'ri:wechat-2-line'
     color = '#1AAD19'
   [[params.social]]
     name = 'E-Mail'
-    link = 'mailto:x@yybb.us'
+    link = 'mailto:richffan@outlook.com'
     icon = 'ri:mail-line'
     color = '#8E71C1'
   [[params.social]]
@@ -210,7 +210,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 归档 / 标签页 ECharts 图表 ---
   [params.charts]
-    archivesStartMonth = '2024-03'   # 归档图起始月份
+    archivesStartMonth = '2020-01'   # 归档图起始月份
     tagsChartLength = 10             # 标签图显示 Top N
 
   # --- 文章页底部赞助按钮 ---
@@ -220,11 +220,11 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
     description = '我很可爱哦，可以给我点钱钱嘛~'
     [[params.sponsor.methods]]
       name = '支付宝'
-      url = '/img/zfb.png'
+      url = 'https://img.252262.xyz/file/1783481701602_qrcode_for_gh.jpg'
       color = '#00A3EE'
     [[params.sponsor.methods]]
       name = '微信支付'
-      url = '/img/weix.png'
+      url = 'https://img.252262.xyz/file/1783481701602_qrcode_for_gh.jpg'
       color = '#2DC100'
 
   # --- 文章版权声明（CC 协议）---
@@ -252,7 +252,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
   # --- Twikoo 评论（仅当 params.comment.provider = twikoo 时生效）---
   # 留空 envId 时评论区显示配置提示，不影响站点其它功能
   [params.twikoo]
-    envId = 'https://your-twikoo-url'
+    envId = 'https://twikoo.252262.xyz'
 
   # --- 留言页信封动画图片（文件在 static/envelope/）---
   [params.envelope]
@@ -267,7 +267,7 @@ enableRobotsTXT = true     # 生成 robots.txt（模板在 themes/aiovtue/layout
 
   # --- 顶栏标题 ---
   [params.navbar]
-    titleParts = ['AIOVTUE-', '雪']   # 顶栏主标题分段（可产生动画效果）
+    titleParts = ['RichFan-', '笼']   # 顶栏主标题分段（可产生动画效果）
     subTitle = '雨是神的烟花'
     offset = 0
 
